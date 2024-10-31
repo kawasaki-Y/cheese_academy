@@ -1,0 +1,1410 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* すべての要素が、ページのどこにいても最初から同じ条件で始まるように、
+    余計なマージンやパディングはゼロ。計算の基準をそろえ、統一感を持たせる。 */
+}
+
+/* 基本設定 */
+body {
+    font-family: Arial, sans-serif;
+    /* ページ全体の雰囲気を決めるフォント。Arialはシンプルで親しみやすい、まるで聞き慣れた友達のよう。 */
+    color: #333;
+    /* テキストの色はやさしいダークグレー。強すぎず、でもしっかりとした存在感。 */
+    line-height: 1.6;
+    /* 行間をゆったりと1.6倍に。文字たちはお互いにスペースを持ち、読み手に穏やかな流れを提供する。 */
+}
+
+/* ヘッダー部分 */
+
+header {
+    background-color: white;
+    /* 白、純粋で清々しい空間が広がる。ヘッダーはページの入口、その門を飾るのは潔い白。 */
+    border-bottom: 1px solid #eee;
+    /* その下に薄い線が走る。まるで、視線を穏やかに次のセクションへ誘導するかのように。 */
+    padding: 20px 0;
+    /* ヘッダー全体を包み込む20pxの空間。余裕のあるスペースは、訪れる人に穏やかな気持ちを与える。 */
+}
+
+.header-container {
+    display: flex;
+    /* この場所はフレックスボックスの魔法が働く場所。要素たちはその力で、柔軟に配置される。 */
+    justify-content: space-between;
+    /* ロゴとメニュー、それぞれ反対側へ。空間を保ちつつも、均等な美しさを追求する。 */
+    align-items: center;
+    /* それぞれの高さもきれいに整列。心が落ち着く、そんな視覚的なバランスを実現する。 */
+    margin: 0 auto;
+    /* ヘッダーの全体を中央に配置。左でも右でもない、完璧な中央に立つ姿は、まるで均衡を保つ彫刻のようだ。 */
+    padding: 0 0px;
+    /* 横方向の余白は最小限に。無駄を省き、シンプルさを極める。 */
+}
+
+.logo {
+    margin-right: auto;
+    /* ロゴはページの左端で堂々と構える。右側に他の要素を寄せるためのスペースを与えている。 */
+}
+
+
+.logo img {
+    width: auto;
+    /* ロゴ画像は、自然なサイズ感で表示。無理に引き伸ばされることなく、あるがままの美しさを保つ。 */
+    height: 100%;
+    /* そして高さは全てをカバー。スクリーンの中で堂々たる存在感を持つ。 */
+    margin-right: auto;
+    /* ロゴは他の要素たちにしっかりとしたスペースを譲り、風格を示しながら余裕を持って配置される。 */
+}
+
+/* メニュー部分 */
+
+.menu ul {
+    list-style-type: none;
+    /* ここではリストのドットや番号は必要ない。シンプルで洗練された姿を見せるため、装飾をそぎ落とす。 */
+    display: flex;
+    /* メニューの項目たちもフレックスボックスの力で横一列に整然と並ぶ。調和と秩序の美学がここにある。 */
+    gap: 20px;
+    /* それぞれのメニューの間には20pxの隙間が。互いを尊重しつつ、存在感を際立たせるための余裕。 */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /* リンクには下線など不要。すでにその存在感で、行き先を指し示しているから。 */
+    color: black;
+    /* シンプルな黒で、確実に見てほしい。控えめだけれども力強い。 */
+    font-weight: bold;
+    /* 太字で、はっきりと自信に満ちたメニューたち。「ここにいるよ！」という確かな存在感を示す。 */
+    font-size: 21px;
+    /* 少し大きめの21pxで、ちょうど目に入りやすく、しっかりと主張するサイズ感。 */
+    transition: color 0.3s ease;
+    /* マウスが近づくとき、色が変わる瞬間は滑らかに。目に優しく、気持ちの良い変化を約束する。 */
+    padding: 50px;
+    /* 各リンクには50pxの余裕あるスペースが確保されている。クリックしやすさを最大限に考慮した配慮。 */
+}
+
+.menu ul li a:hover {
+    color: #f39c12;
+    /* マウスをかざせば、リンクは黄金色に変わる。この瞬間、ページとのインタラクションを楽しむ。 */
+}
+
+/* メイン部分 */
+.message {
+    position: relative;
+    /* 位置を自由に操るための「相対的」な設定。背景の上に自由に配置され、他の要素に依存しない。 */
+    width: 100%;
+    /* 横幅は全てをカバー。ページ全体にメッセージが広がり、どこからでも目に入る。 */
+    height: 400px;
+    /* 高さは400px。情報量が多すぎない、心地よいバランスの中でメッセージが浮かび上がる。 */
+    overflow: hidden;
+    /* もし余計なものが飛び出したら、きれいにカット。見た目の整頓が、この美しさを保つ秘訣。 */
+}
+
+.message_background {
+    width: 100%;
+    /* 背景画像はページいっぱいに広がる。隅々までその美しさを誇示する。 */
+    height: 100%;
+    /* 高さもすべてをカバー。壮大な背景が、メッセージを支える。 */
+    object-fit: cover;
+    /* 画像はそのままの美しさを保ちつつ、要素の枠内にフィットするように巧みにトリミングされる。 */
+    filter: brightness(100%);
+    /* 画像に少しだけ手を加える。明るさをコントロールして、全体のバランスを整える。 */
+    
+}
+
+.message_text {
+    position: absolute;
+    /* テキストはまるで背景の上に浮かんでいるかのように、画面上で自由に配置される。 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 完璧な中央に位置するための巧妙な計算。この精度が、ビジュアルの美しさを引き立てる。 */
+    color: white;
+    /* テキストは白く輝き、背景との対比で際立つ。シンプルだけど力強い表現。 */
+    text-align: center;
+    /* テキストは中央揃え。視線は自然とここに集中し、メッセージがまっすぐに伝わる。 */
+    display: inline-block;
+    /* テキストの幅はその内容にフィット。余計なスペースは排除し、見た目もすっきり。 */
+    opacity: 0;
+    /* 最初は透明。これからゆっくりと姿を現す、ドラマティックな演出が待っている。 */
+    animation: fadeInUp 2s ease-out forwards;
+    /* テキストがふわっと上に浮かびながら、ゆっくりと現れる。この動きが視線を引きつける。 */
+}
+
+
+.message_text h1 {
+    font-size: 48px;
+    /* タイトルは大きく48px。画面にインパクトを与える、圧倒的な存在感。 */
+    margin-bottom: 30px;
+    /* 下には30pxのスペースを設け、見た目のゆとりとバランスを整える。 */
+    font-weight: bold;
+    /* 太字で力強く。重要なメッセージを届けるときは、しっかりと主張する。 */
+    white-space: nowrap;
+    /* テキストは折り返されず、1行で表示。長い文章でも、きちんと収められる。 */
+    text-align: center;
+    /* 再び中央揃え。画面の中央で、まっすぐに見つめてくれる。 */
+    display: inline-block;
+    /* テキストはその内容にフィット。必要な分だけの幅を確保する。 */
+    overflow: hidden;
+    /* もし文字が枠からはみ出したら、そっと隠しておく。デザインは常にクリーンで。 */
+    border-right: 3px solid white;
+    /* タイピングカーソルのように、テキストの右端に小さな白い線が入る。細かい演出が光る。 */
+    width: 0;
+    /* 初めは表示されない。このあと、タイピングのように文字が現れる瞬間が待っている。 */
+    animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+    /* タイピング風のアニメーションと、点滅するカーソル。緊張感と期待が高まる演出だ。 */
+    }
+
+.message_text p {
+    font-size: 24px;
+    /* サブタイトルは少し控えめな24px。でも、その存在は決して見逃されない。 */
+    font-weight: normal;
+    /* 普通の太さで、穏やかな印象を与える。メインタイトルを引き立てる控えめな相棒。 */
+    text-align: center;
+    /* 再び中央揃え。見ている人の視線をしっかりと捉えて離さない。 */
+    white-space: nowrap;
+    /* テキストは1行で表示。シンプルで美しいレイアウトが完成する。 */
+    overflow: hidden;
+    /* テキストが長くても、きれいに隠してくれる。いつも整然とした見た目を保つ。 */
+    border-right: 3px solid white;
+    /* タイピングカーソル風の演出がここでも光る。細かいディテールがデザインの完成度を高める。 */
+    width: 0;
+    /* 最初は幅ゼロ。これからタイピングのように文字が浮かび上がる。 */
+    animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+    /* タイピングと点滅。絶妙なリズムで、文字が一つずつ現れる演出。心躍る瞬間だ。 */
+}
+
+/* 文字フェードイン＆スライドアップのアニメーション */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        /* 姿はまだ見えない。だが、これからゆっくりと登場する準備が整っている。 */
+        transform: translate(-50%, 10%);
+        /* 最初は少し下に控えている。ここから、ゆっくりと上がってくる演出が始まる。 */
+    }
+
+    100% {
+        opacity: 1;
+        /* ついにその姿が現れる。鮮やかに、しっかりと視界に入ってくる瞬間。 */
+        transform: translate(-50%, -50%);
+        /* 完璧な中央にぴたりと位置。これが目指すべき美しいバランス。 */
+    }
+}
+
+/* タイピングアニメーション */
+@keyframes typing {
+    from {
+        width: 0;
+        /* 何もないところから始まる。 */
+    }
+
+    to {
+        width: 100%;
+        /* すべての文字が揃ったとき、そのメッセージは完全に伝わる。 */
+    }
+}
+
+/* タイピングをおしゃれにするアニメーション */
+@keyframes blink {
+    from {
+        border-color: transparent;
+        /* カーソルが見えなくなり、消えたかのような瞬間。 */
+    }
+
+    to {
+        border-color: white;
+        /* そして再び白く光る。絶妙なリズムで点滅する、まるで文字が呼吸しているかのよう。 */
+    }
+}
+
+
+/* 背景画像のズームイン効果 */
+.message_background img {
+    width: 100%;
+    /* 画像がページ全体に広がる。隅々までその美しさを見せつける。 */
+    height: 100%;
+    /* 高さも100%。全てを包み込み、余すところなく視界を占領する。 */
+    object-fit: cover;
+    /* 画像が縦横にしっかりとフィット。どんなサイズでも見た目が崩れない。 */
+    filter: brightness(70%);
+    /* 少し暗くすることで、上に配置された文字がより引き立つ。 */
+    animation: zoomIn 20s ease forwards;
+    /* ゆっくりとズームインする20秒間の旅。気づかぬ間に、徐々に大きくなっていく。 */
+}
+
+/* ズームインのアニメーション定義 */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        /* 最初は通常サイズ。ここからゆっくりと変化が始まる。 */
+    }
+
+    100% {
+        transform: scale(2.1);
+        /* 最終的には2.1倍の大きさに拡大。迫ってくるチーズたち。 */
+    }
+}
+
+
+/* ABOUTセクション */
+.about {
+    background-color: #f9f9f9;
+    /* 優しい薄いグレーが、セクション全体を包み込む。心地よく落ち着いた印象。 */
+    padding: 50px 20px;
+    /* たっぷりの余白が与えられ、ゆったりとした空間が広がる。上下50px、左右20pxの余白が心を和ませる。 */
+    border-radius: 10px;
+    /* 角をほんの少し丸めることで、柔らかさを演出。視覚的にも触れたくなるような親しみやすさ。 */
+    text-align: center;
+    /* 中央揃えで、視線が自然にテキストに集中する。まとまりのあるバランス感が美しい。 */
+    max-width: 1200px;
+    /* セクションの幅は最大800px。広すぎず、狭すぎない心地よいサイズ感。 */
+    margin: 0 auto;
+    /* 画面の中央にセクションが配置される。まるで舞台の上で主役が登場する瞬間のような華やかさ。 */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 少しだけ影をつけることで、浮き上がって見える。軽やかな立体感が、ページに動きを与える。 */
+}
+
+.about h2 {
+    font-size: 36px;
+    /* 大きめの見出しが、セクションの始まりを力強く告げる。 */
+    margin-bottom: 40px;
+    /* 見出しの下にたっぷりとした余白。次の要素との距離感を大事にする。 */
+    color: #fca503;
+    /* 鮮やかなオレンジ色が、ページのアクセントとして映える。 */
+    text-transform: uppercase;
+    /* すべての文字を大文字に変換し、強いメッセージ性を持たせる。 */
+    letter-spacing: 2px;
+    /* 文字間に少しの余白を持たせて、読みやすさと美しさを両立。 */
+    font-weight: bold;
+    /* 太字で、堂々たる存在感を持つ見出しに。ここに注目してほしいという力強いメッセージ。 */
+    display: inline-block;
+    /* 見出しは、その内容に合わせた幅で表示される。余計なスペースを作らない、シンプルで整ったデザイン。 */
+    position: relative;
+    /* これから下線を追加するための土台。 */
+}
+
+/* 見出しの下に赤い下線を追加 */
+.about h2::after {
+    content: '';
+    /* 目には見えないが、この部分で下線の中身が定義される。 */
+    position: absolute;
+    /* 見出しのすぐ下に配置されるように、絶対的な位置にセットされる。 */
+    width: 40px;
+    /* 下線の長さは40px。短いけれど、その存在は確かだ。 */
+    height: 4px;
+    /* 下線の太さは4px。強く、けれど主張しすぎないほどよい太さ。 */
+    background-color: red;
+    /* 鮮やかな赤が、見出しの下に控えめながらも印象的に存在している。 */
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    /* 中央揃え。まるで左右から引き寄せられるかのような均整の取れた配置。 */
+    transition: width 1.5s ease;
+    /* ホバーしたときに、ゆっくりと下線が広がる。 */
+}
+
+.about h2:hover::after {
+    width: 200px;
+/* ホバーすると、下線は200pxに広がる。なんとなくユニーク。 */
+}
+
+.about h3 {
+    font-size: 28px;
+    /* 見出しよりも少し控えめだが、それでもしっかりと目を引く28pxの大きさ。 */
+    line-height: 1.8;
+    /* 行間を広めにとり、ゆったりとした読みやすさを提供。 */
+    color: #666;
+    /* 薄いグレーで、穏やかで落ち着いたトーンのテキスト。 */
+    font-weight: bold;
+    /* 強調された太さが、内容の重要さを伝えてくれる。 */
+}
+
+.about p {
+    font-size: 18px;
+    /* 通常のテキストは18px。小さすぎず、大きすぎない、心地よいサイズ。 */
+    line-height: 1.8;
+    /* 行間も広く、読み手の目に優しいバランス。 */
+    color: #666;
+    /* グレーのテキストが、リラックスした雰囲気を醸し出す。 */
+}
+
+/* タイピング効果 */
+.typing-container {
+    font-family: 'Courier', monospace;
+    /* タイピング風のフォント */
+    white-space: nowrap;
+    /* 1行で表示 */
+    overflow: hidden;
+    /* テキストのオーバーフローを隠す */
+    border-right: 3px solid;
+    /* タイピングカーソル */
+    width: 0;
+    /* 初期状態では表示しない */
+    animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+    /* タイピング風アニメーション */
+}
+
+.
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: black;
+    }
+}
+
+/* クラス "mb-60" と "mb-40" に余白を設定 */
+.mb-60 {
+margin-bottom: 60px;
+}
+
+.mb-40 {
+margin-bottom: 40px;
+}
+
+
+/* メインビジュアル画像グリッド */
+.mainvisual {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.mainvisual img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* スライドショーの全体のコンテナ */
+.slideshow-container {
+    max-width: 1200px;
+    /* 最大幅を800pxに設定 */
+    margin: auto;
+    /* 真ん中に配置 */
+    margin-bottom: 40px;
+    border-radius: 10px;
+    /* 角を丸める */
+    overflow: hidden;
+    /* はみ出た部分を隠す */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 影をつけて立体感を演出 */
+    background: linear-gradient(to right, #faff5f0c, #feb47b);
+        /* グラデーション */
+}
+
+/* スライドショー内の画像 */
+.slideshow-wrapper img {
+    width: 100%;
+    /* 画像の幅を100%に設定 */
+    border-radius: 10px;
+    /* 画像の角を丸める */
+    transition: transform 2s ease;
+     /* 画像がズームインするトランジションを入れてみる */
+    transition: transform 0.5s ease;
+     /* ホバー時にズーム */
+}
+
+.slideshow-wrapper img:hover {
+    transform: scale(2.05);
+    /* 画像を少し拡大 */
+}
+
+
+/* キャプションのスタイル */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(245, 153, 7, 0.6);
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    /* padding: 10px; */やめた
+    border-radius: 5px;
+    max-width: 90%;
+    /* キャプションが画像からはみ出さないように調整 */
+}
+
+/* COURSEセクション */
+.course {
+    background-color: #f9f9f9;
+        /* セクション全体に薄い背景色 */
+        padding: 50px 20px;
+        /* 上下50px、左右20pxの余白 */
+        border-radius: 10px;
+        /* 角を少し丸く */
+        text-align: center;
+        /* テキストを中央揃え */
+        max-width: 1200px;
+        /* セクションの最大幅 */
+        margin: 0 auto;
+        /* セクション全体を中央に配置 */
+        margin-bottom: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* 少しの影で浮かび上がらせる */
+}
+
+.course h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    /* 見出しの下に余白 */
+    color: #fca503;
+    text-transform: uppercase;
+    /* 大文字に変換 */
+    letter-spacing: 2px;
+    /* 文字間隔を広げる */
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.course h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    /* 下線の長さ */
+    height: 4px;
+    /* 下線の太さ */
+    background-color: red;
+    /* 赤い下線 */
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    /* 下線を中央揃え */
+    transition: width 1.5s ease;
+        /* アニメーションを追加 */
+    }
+    
+.course h2:hover::after {
+    width: 200px;
+    /* ホバー時に下線を表示 */
+    }
+
+
+.course p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* course1 */
+/* 親要素の設定（カードスタイル） */
+.course_01 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px; /* 親要素に最大幅を指定して余裕を持たせる */
+    margin: auto; /* 親要素を中央揃えにする */
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #f3ec78, #ccf80500);
+    border-radius: 15px;
+    /* 角を丸める */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* ボックスに影を追加 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* カード全体のホバーエフェクト */
+    overflow: hidden;
+}
+
+/* ホバー時のカードの動き */
+.course_01:hover {
+    transform: translateY(-5px);
+    /* ホバー時に少し浮き上がる効果 */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* ホバー時の影を強調 */
+}
+
+/* 画像のスタイル */
+.course_01 img {
+    width: 35%;
+    /* 画像の幅を35%に調整してバランスを取る */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    /* ホバー時に画像がズームインするエフェクト */
+    max-width: 100%; /* 親要素の最大幅に制限 */
+    min-width: 0; /* 最小幅の制限を解除 */
+}
+
+.course_01:hover img {
+    transform: scale(1.05);
+    /* ホバー時に画像を少しズーム */
+}
+
+/* テキスト部分 */
+.course_01 .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    /* テキスト部分の幅を55%に設定 */
+    padding-left: 20px;
+    /* 画像との余白 */
+    position: relative;
+    z-index: 2;
+}
+
+/* 見出しのスタイル */
+.course_01 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* 見出しの下に中央揃えの赤い下線を追加 */
+.course_01 h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #e74c3c;
+    bottom: 0;
+    left: 0;
+}
+
+/* 段落のスタイル */
+.course_01 p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* ホバー時にテキストの色を変化させる */
+.course_01:hover p {
+    color: #333;
+}
+
+/* course2 */
+
+/* 親要素の設定（カードスタイル） */
+.course_02 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    /* 親要素に最大幅を指定して余裕を持たせる */
+    margin: auto;
+    /* 親要素を中央揃えにする */
+    background: linear-gradient(135deg, #f3ec78, #ccf80500);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* ボックスに影を追加 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* 画像がテキスト領域に拡大しないようにする */
+}
+
+/* ホバー時のカードの動き */
+.course_02:hover {
+    transform: translateY(-5px);
+    /* ホバー時に少し浮き上がる効果 */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* ホバー時の影を強調 */
+}
+
+/* 画像のスタイル */
+.course_02 img {
+    width: 40%;
+    /* 画像の幅を40%に調整 */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    /* ホバー時に画像がズームインするエフェクト */
+}
+
+/* 画像のズームイン効果 */
+.course_02:hover img {
+    transform: scale(1.05);
+    /* ホバー時に画像を少しズーム */
+}
+
+/* テキスト部分 */
+.course_02 .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* テキスト部分の幅を60%に設定 */
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* 見出しのスタイル */
+.course_02 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* 見出しの下に中央揃えの赤い下線を追加 */
+.course_02 h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #e74c3c;
+    bottom: 0;
+    left: 0;
+}
+
+/* 段落のスタイル */
+.course_02 p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* ホバー時にテキストの色を濃くする */
+.course_02:hover p {
+    color: #333;
+}
+/* course3 */
+
+/* 親要素の設定（カードスタイル） */
+.course_03 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    /* 親要素に最大幅を指定して余裕を持たせる */
+    margin: auto;
+    /* 親要素を中央揃えにする */
+    background: linear-gradient(135deg, #f3ec78, #ccf80500);
+    border-radius: 15px;
+    /* 角を丸める */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* ボックスに影を追加 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* カード全体のホバーエフェクト */
+    overflow: hidden;
+}
+
+/* ホバー時のカードの動き */
+.course_03:hover {
+    transform: translateY(-5px);
+    /* ホバー時に少し浮き上がる効果 */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* ホバー時の影を強調 */
+}
+
+/* 画像のスタイル */
+.course_03 img {
+    width: 35%;
+    /* 画像の幅を35%に調整してバランスを取る */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    /* ホバー時に画像がズームインするエフェクト */
+    max-width: 100%;
+    /* 親要素の最大幅に制限 */
+    min-width: 0;
+    /* 最小幅の制限を解除 */
+}
+
+.course_03:hover img {
+    transform: scale(1.05);
+    /* ホバー時に画像を少しズーム */
+}
+
+/* テキスト部分 */
+.course_03 .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    /* テキスト部分の幅を55%に設定 */
+    padding-left: 20px;
+    /* 画像との余白 */
+    position: relative;
+    z-index: 2;
+}
+
+/* 見出しのスタイル */
+.course_03 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* 見出しの下に中央揃えの赤い下線を追加 */
+.course_03 h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #e74c3c;
+    bottom: 0;
+    left: 0;
+}
+
+/* 段落のスタイル */
+.course_03 p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* ホバー時にテキストの色を変化させる */
+.course_03:hover p {
+    color: #333;
+}
+
+/* course共通 */
+
+.course_01, .course_02, .cource_03 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.course_01 img, .course_02 img, .cource_03 img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.course_01 h2, .course_02 h2, .cource_03 h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* NEWSセクション */
+
+.news_text {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.news_text h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    /* 見出しの下に余白 */
+    color: #fca503;
+    text-transform: uppercase;
+    /* 大文字に変換 */
+    letter-spacing: 2px;
+    /* 文字間隔を広げる */
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+/* 見出しの下に赤い下線を追加 */
+.news_text h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    /* 下線の長さ */
+    height: 4px;
+    /* 下線の太さ */
+    background-color: red;
+    /* 赤い下線 */
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    /* 下線を中央揃え */
+    transition: width 1.5s ease;
+    /* アニメーションを追加 */
+}
+
+.news_text h2:hover::after {
+    width: 200px;
+    /* ホバー時に下線を表示 */
+}
+
+.news_text p {
+    font-size: 18px;
+    /* テキストのフォントサイズを少し大きく */
+    line-height: 1.8;
+    /* 行間を広くして読みやすく */
+    color: #666;
+    /* 少し薄いグレーのテキスト色 */
+    font-weight: bold;
+}
+
+/* 親コンテナ */
+.news-container {
+    display: flex;
+    /* 横並びに配置 */
+    gap: 20px;
+    /* アイテム間のスペース */
+    flex-wrap: wrap;
+    /* レスポンシブ対応で折り返し */
+    justify-content: space-between;
+    /* 均等配置 */
+    margin: 40px;
+    /* 下に余白 */
+}
+
+/* 各news項目のスタイル */
+.news-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    /* 各ニュース項目の幅を30%に設定 */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 影をつけて立体感 */
+    transition: transform 0.3s ease;
+}
+
+.news-img:hover {
+    transform: translateY(-5px);
+    /* ホバー時に浮き上がる */
+}
+
+/* 画像のスタイル */
+.news-img img {
+    width: 60%;
+    /* 画像を親要素の幅に合わせる */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* テキスト部分のスタイル */
+/* ニュース項目のテキスト全体をおしゃれにするスタイル */
+
+/* 見出しのスタイル */
+.news-text h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    /* おしゃれなフォント */
+    text-transform: uppercase;
+    /* 大文字にして強調 */
+    letter-spacing: 1.5px;
+    /* 文字間を広げる */
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /* 文字に微妙な影を追加 */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* ホバー時の変化 */
+}
+
+/* ホバー時に色が変わり、少し上に浮く */
+.news-text h4:hover {
+    color: #e74c3c;
+    transform: translateY(-3px);
+    /* 上に少し移動 */
+}
+
+/* 段落部分のスタイル */
+.news-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    /* 行間を広くして読みやすく */
+    font-family: 'Open Sans', sans-serif;
+    /* 読みやすいフォント */
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* 段落テキストもホバー時に色とシャドウが変わる */
+.news-text p:hover {
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 見出しにアニメーションを追加 */
+.news-text h4 {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.8s ease forwards;
+    /* スライドアップしてフェードイン */
+}
+
+/* アニメーション効果 */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 段落テキストにも同様のアニメーション */
+.news-text p {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+    /* 見出しの後に表示される */
+}
+
+/* "more" ボタンのスタイル */
+.more h4 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #f39c12;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more h4:hover {
+    color: orangered;
+    /* ホバー時に色を変える */
+}
+
+
+/* ACCESSセクション */
+
+.access {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.access h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    /* 見出しの下に余白 */
+    color: #fca503;
+    text-transform: uppercase;
+    /* 大文字に変換 */
+    letter-spacing: 2px;
+    /* 文字間隔を広げる */
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+/* 見出しの下に赤い下線を追加 */
+.access h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    /* 下線の長さ */
+    height: 4px;
+    /* 下線の太さ */
+    background-color: red;
+    /* 赤い下線 */
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    /* 下線を中央揃え */
+    transition: width 1.5s ease;
+    /* アニメーションを追加 */
+}
+
+.access h2:hover::after {
+    width: 200px;
+    /* ホバー時に下線を表示 */
+}
+
+.access p {
+    font-size: 18px;
+    /* テキストのフォントサイズを少し大きく */
+    line-height: 1.8;
+    /* 行間を広くして読みやすく */
+    color: #666;
+    /* 少し薄いグレーのテキスト色 */
+    font-weight: bold;
+}
+
+/* マップの装飾 */
+.access_map {
+    display: flex;
+    justify-content: center;
+    /* マップを中央に配置 */
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%; /* 画面いっぱいの幅を確保 */
+    background-color: #f9f9f9;
+    /* 背景色を追加 */
+    border-radius: 15px;
+    /* 角を丸める */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 影を追加して立体感 */
+    margin: 0 auto 40px auto; /* 0 autoで左右中央寄せ */
+    /* 下に余白を追加 */
+}
+
+/* iframeの装飾 */
+.access_map iframe {
+    border: 5px solid #e74c3c;
+    /* 太めの枠線を追加してアクセント */
+    border-radius: 15px;
+    /* iframeの角を丸める */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* iframeにも影を追加 */
+    width: 100%;
+    /* レスポンシブ対応に */
+    max-width: 800px;
+    /* マップの最大幅を設定 */
+    height: 450px;
+    /* 高さを固定 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* ホバー時のアニメーション */
+}
+
+/* ホバー時のエフェクト */
+.access_map iframe:hover {
+    transform: scale(1.02);
+    /* 少しズームイン */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* ホバー時に影を強調 */
+}
+
+.access_info {
+    padding: 40px 20px;
+    background-color: #ef0b0b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.access_info_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*  < !-- access_テキスト部分2 --> */
+
+/* 全体のスタイル */
+.access_info {
+    max-width: 1200px;
+    margin: 40px auto;
+    /* 中央揃え */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 立体感を演出 */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* 各項目の間に余白 */
+}
+
+/* 各項目のスタイル */
+.access_info_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    /* 軽い影を追加 */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ホバー時に少し浮き上がる効果 */
+.access_info_item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* ホバー時の影を強調 */
+}
+
+/* ラベル部分のスタイル */
+.access_info_item .label {
+    font-weight: bold;
+    color: #333;
+    flex-basis: 30%;
+    /* ラベル部分の幅 */
+    text-align: left;
+}
+
+/* コンテンツ部分のスタイル */
+.access_info_item .content {
+    color: #555;
+    text-align: right;
+    flex-basis: 70%;
+    /* コンテンツ部分の幅 */
+    word-break: break-all;
+    /* 長いテキストの折り返し */
+}
+
+/* メールアドレス部分の装飾（リンク風に見せる） */
+.access_info_item .content a {
+    color: #e74c3c;
+    /* メールアドレスは赤で強調 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.access_info_item .content a:hover {
+    color: #c0392b;
+    /* ホバー時に濃い赤色に */
+}
+
+/* contact_テキスト部分 */
+/* 全体のスタイル */
+.contact_text {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* 見出しのスタイル */
+.contact_text1 h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e74c3c;
+    /* 赤色で強調 */
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* 見出しに下線を追加 */
+.contact_text1 h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* テキスト部分のスタイル */
+.contact_text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 強調表示のためのテキスト */
+.contact_text2 p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 注意書き（最後の部分）を目立たせる */
+.contact_text4 p {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #fff4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ホバー時に少し動きを加える */
+.contact_text4 p:hover {
+    background-color: #fdeaea;
+    transform: scale(1.02);
+    /* わずかに拡大 */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* CONTACTセクション */
+/* フォーム全体のスタイル */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* 各入力項目の間に余白 */
+    max-width: 1200px;
+    /* 最大幅を設定 */
+    margin: 0 auto;
+    /* フォームを中央に配置 */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 影をつけて立体感を出す */
+}
+
+/* 各フォーム項目のラベル */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* 入力フィールドのスタイル */
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    /* 入力欄の幅をフォームいっぱいに */
+    padding: 10px;
+    border: 2px solid #ddd;
+    /* 境界線 */
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* フォーカス時のエフェクト */
+}
+
+/* フォーカス時のエフェクト */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #e74c3c;
+    /* フォーカス時に赤くする */
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+    /* フォーカス時に影を追加 */
+    outline: none;
+    /* フォーカス時の青い枠を非表示に */
+}
+
+/* セレクトボックスのスタイル */
+form select {
+    appearance: none;
+    /* 矢印のカスタマイズ */
+    background-image: url('down-arrow.png');
+    /* 矢印をカスタマイズ（例） */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* チェックボックスのスタイル */
+form input[type="checkbox"] {
+    margin-right: 10px;
+    /* ラベルとの間に余白を追加 */
+}
+
+/* テキストエリアのスタイル */
+form textarea {
+    resize: vertical;
+    /* 高さの調整のみ許可 */
+}
+
+/* 送信ボタンのスタイル */
+form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* 送信ボタンのホバーエフェクト */
+form input[type="submit"]:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+    /* ホバー時に少し上に浮く */
+}
+
+
+
+.送信ボタン {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.送信ボタン input {
+    background-color: #f39c12;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.送信ボタン input:hover {
+    background-color: #e67e22;
+}
+
+
+/* フッター全体のスタイル */
+.footer {
+    width: 100%;
+    /* 画面いっぱいに広げる */
+    background-color: #333;
+    /* 背景色をダークグレーに */
+    padding: 20px 0;
+    /* 上下に余白 */
+    color: #fff;
+    /* テキストを白に */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    /* パディングを含めた幅を計算 */
+}
+
+/* フッター内のテキスト部分 */
+.footer p {
+    text-align: center;
+    /* テキストを中央に揃える */
+    margin: 0;
+    /* 不要な余白を削除 */
+    font-size: 14px;
+    letter-spacing: 1px;
+    /* 文字間隔を少し広く */
+}
+/* 後から追加した要素はここから下に記載していく */
+
